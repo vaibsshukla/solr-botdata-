@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema name="pdf-schema" version="1.6">
+<uniqueKey>id</uniqueKey>
+
+  <field name="id" type="int" indexed="true" stored="true" required="true" /> 
+ <field name="date" type="string" indexed="true" stored="true" required="true"/>
+ <field name="pdf_pdfversion" type="string" indexed="true" stored="true" required="true"/>
+ <field name="stream_content_type" type="string" indexed="true" stored="true" required="true"/>
+ <field name="access_permission_modify_annotations" type="string" indexed="true" stored="true" required="true"/>
+ <field name="access_permission_can_print_degraded" type="string" indexed="true" stored="true" required="true"/>
+ <field name="dcterms_created" type="string" indexed="true" stored="true" required="true"/>
+ <field name="dc_format" type="string" indexed="true" stored="true" required="true"/>
+ <field name="access_permission_fill_in_form" type="string" indexed="true" stored="true" required="true"/>
+ <field name="pdf_encrypted" type="string" indexed="true" stored="true" required="true"/>
+ <field name="modified" type="string" indexed="true" stored="true" required="true"/>
+ <field name="meta_creation_date" type="string" indexed="true" stored="true" required="true"/>
+ <field name="created" type="string" indexed="true" stored="true" required="true"/>
+ <field name="creation_date" type="string" indexed="true" stored="true" required="true"/>
+ <field name="producer" type="string" indexed="true" stored="true" required="true"/>
+ <field name="pdf_docinfo_producer" type="string" indexed="true" stored="true" required="true"/>
+  <field name="_version_" type="string" indexed="true" stored="true" required="true" />  
+  <field name="_text_" type="text" indexed="true" stored="true" required="true" />  
+  <field name="last_modified" type="text" indexed="true" stored="true" required="true" />  
+  <field name="dcterms_modified" type="text" indexed="true" stored="true" required="true" />  
+  <field name="last_save_date" type="text" indexed="true" stored="true" required="true" />  
+  <field name="pdf_docinfo_modified" type="text" indexed="true" stored="true" required="true" />  
+  <field name="stream_name" type="text" indexed="true" stored="true" required="true" />  
+  <field name="meta_save_date" type="text" indexed="true" stored="true" required="true" />  
+  <field name="content_type" type="text" indexed="true" stored="true" required="true" />  
+  <field name="stream_size" type="text" indexed="true" stored="true" required="true" />  
+  <field name="x_parsed_by" type="text" indexed="true" stored="true" required="true" />  
+  <field name="stream_source_info" type="text" indexed="true" stored="true" required="true" />  
+  <field name="access_permission_extract_for_accessibility" type="text" indexed="true" stored="true" required="true" />  
+  <field name="access_permission_assemble_document" type="text" indexed="true" stored="true" required="true" />  
+  <field name="xmptpg_npages" type="text" indexed="true" stored="true" required="true" />  
+  <field name="access_permission_extract_content" type="text" indexed="true" stored="true" required="true" />  
+  <field name="access_permission_can_print" type="text" indexed="true" stored="true" required="true" />  
+  <field name="access_permission_can_modify" type="text" indexed="true" stored="true" required="true" />  
+  <field name="pdf_docinfo_created" type="text" indexed="true" stored="true" required="true" />  
+  
+  
+  
+  <fieldType name="string" class="solr.StrField" sortMissingLast="true" docValues="true" />
+  <fieldType name="int" class="solr.IntPointField" docValues="true"/>
+  <fieldType name="text" class="solr.TextField" positionIncrementGap="100" multiValued="true"/> 
+</schema>
